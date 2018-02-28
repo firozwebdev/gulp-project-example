@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+        col-lg >= 1200px
+        991px <=col-md < 1200px
+       768px <= col-sm < 991px
+        col-xs <768px
+    -->
+    <!--<style>
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: red;
+            }
+            p{
+                color:blue;
+                font-size:30px;
+            }
+        }
+
+        @media only screen and (max-width: 990px) and (min-width: 768px)  {
+            body {
+                background-color: blue;
+            } 
+            p{
+                color:red;
+                font-size:35px;
+            }
+        }
+        @media only screen and (max-width: 1199px) and (min-width: 991px)  {
+            body {
+                background-color: green;
+            } 
+            p{
+                color:black;
+                font-size:40px;
+            }
+        }
+        @media only screen and  (min-width: 1200px)  {
+            body {
+                background-color: black;
+            } 
+            p{
+                color:yellow;
+                font-size:50px;
+            }
+        }
+    </style>-->
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.google.com">Google</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#tutorial">Tutorial</a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+   <div class="jumbotron">
+       <div class="container well">
+           <h1>Contact Me</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto libero sapiente animi placeat. Ut, at similique accusamus provident velit deleniti ducimus fuga animi. Quod odit voluptatum tenetur. Dolore, nemo deleniti.</p>
+            <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ripon">Submit</button></p>
+       </div>
+   </div>
+
+   <!--modal starts here-->
+   <div class="modal fade" tabindex="-1" role="dialog" id="ripon">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Contact Me</h4>
+            </div>
+            <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                            <input type="checkbox"> Check me out
+                            </label>
+                        </div>
+                        
+                    </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+   <!--modal end here-->
+   <script src="js/jquery-3.3.1.js"></script>
+   <script src="js/bootstrap.js"></script>
+  <!-- <script>
+       $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+         });
+   </script>-->
+</body>
+</html>
